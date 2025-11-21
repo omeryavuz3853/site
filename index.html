@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
@@ -28,12 +29,22 @@
     </header>
 
     <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
+        <div class="container hero-container">
+            <div class="hero-text">
                 <h1>Dr. Ömer Yavuz</h1>
                 <p>Göğüs Cerrahı</p>
                 <a href="#contact" class="btn">Randevu / İletişim</a>
             </div>
+            <div class="hero-visuals">
+                <div class="visual-group">
+                    <img src="images/gata_logo.jpg" alt="GATA" class="hero-img gata-logo">
+                    <img src="images/thorax_art.jpg" alt="Göğüs Cerrahisi" class="hero-img thorax-art">
+                </div>
+            </div>
+        </div>
+        <div class="hero-bg-icons">
+            <img src="images/scalpel_bg.png" alt="" class="bg-icon scalpel-bg">
+            <img src="images/stethoscope_bg.png" alt="" class="bg-icon stethoscope-bg">
         </div>
     </section>
 
@@ -41,8 +52,7 @@
         <div class="container">
             <h2>Hakkımda</h2>
             <p>Ankara Gülhane Askeri Tıp Fakültesi'nden mezun oldum. Uzmanlık eğitimimi İstanbul Gülhane Askeri Tıp
-                Akademisi Haydarpaşa Göğüs Cerrahisi Anabilim Dalı'nda tamamladım. Mesleki hayatımda güncel tıbbi
-                gelişmeleri yakından takip ederek hastalarıma en iyi hizmeti sunmayı amaçlıyorum.</p>
+                Akademisi Haydarpaşa Göğüs Cerrahisi Anabilim Dalı'nda tamamladım.</p>
         </div>
     </section>
 
@@ -52,16 +62,17 @@
             <div class="project-grid">
                 <div class="project-card">
                     <h3>Akciğer Kanseri Cerrahisi</h3>
-                    <p>Akciğer kanserinin tanı ve cerrahi tedavisi üzerine uzmanlaşmış yaklaşımlar.</p>
+                    <p>Akciğer kanserinin tanısı, cerrahi tedavisi ve idamesi.</p>
                 </div>
                 <div class="project-card">
                     <h3>Minimal İnvaziv Cerrahi</h3>
-                    <p>VATS (Video Yardımlı Torakoskopik Cerrahi) ile daha az ağrılı ve hızlı iyileşme sağlayan
-                        operasyonlar.</p>
+                    <p>VATS (Video Yardımlı Torakoskopik Cerrahi) ve RATS (Robot Yardımlı Torakoskopik Cerrahi) ile daha
+                        az ağrılı ve hızlı iyileşme sağlayan operasyonlar.</p>
                 </div>
                 <div class="project-card">
                     <h3>Göğüs Duvarı Ameliyatları</h3>
-                    <p>Şekil bozuklukları (Pektus) ve göğüs duvarı tümörlerinin cerrahi düzeltilmesi.</p>
+                    <p>Göğüs kafesi şekil bozuklukları (pektus ekskavatum ve karinatum) ve göğüs duvarı tümörlerinin
+                        ameliyatla düzeltilmesi.</p>
                 </div>
                 <div class="project-card">
                     <h3>Mediasten Hastalıkları</h3>
@@ -74,7 +85,8 @@
     <section id="contact" class="section">
         <div class="container">
             <h2>İletişim</h2>
-            <p>Randevu ve bilgi almak için aşağıdaki kanallardan ulaşabilirsiniz.</p>
+            <p style="text-align: center; margin-bottom: 20px;">Randevu ve bilgi almak için aşağıdaki kanallardan
+                ulaşabilirsiniz.</p>
 
             <div class="contact-info">
                 <p><strong>Telefon:</strong> 0212 909 60 00 (Dahili: 21866 - 21867)</p>
@@ -83,6 +95,17 @@
             </div>
 
             <div class="social-links">
+                <a href="https://www.linkedin.com/in/omeryavuz3853/" target="_blank" class="social-icon"><i
+                        class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/omeryavuz3853/" target="_blank" class="social-icon"><i
+                        class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/@camsakurathoracic" target="_blank" class="social-icon"><i
+                        class="fab fa-youtube"></i></a>
+                <a href="https://scholar.google.com/citations?user=BQMvCpAAAAAJ&hl=tr" target="_blank"
+                    class="social-icon"><i class="fas fa-graduation-cap"></i></a>
+            </div>
+
+            <div class="contact-action">
                 <a href="contact.html" class="btn">Bana Yazın</a>
             </div>
         </div>
