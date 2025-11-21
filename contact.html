@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Dr. Ömer Yavuz</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Dr. Ömer Yavuz</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="index.html#about">Hakkımda</a></li>
+                    <li><a href="index.html#interests">İlgi Alanları</a></li>
+                    <li><a href="contact.html" class="active">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="section hero-small">
+        <div class="container">
+            <h1>Bana Ulaşın</h1>
+            <p>Sorularınız veya randevu talepleriniz için aşağıdaki formu doldurabilirsiniz.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-details">
+                    <h3>İletişim Bilgileri</h3>
+                    <p><strong>Adres:</strong><br>Gülhane Eğitim ve Araştırma Hastanesi<br>Göğüs Cerrahisi Kliniği,
+                        Ankara</p>
+                    <p><strong>Telefon:</strong><br>0212 909 60 00 (Dahili: 21866 - 21867)</p>
+                    <p><strong>E-posta:</strong><br>omer@omeryavuz.net<br>omeryavuz@dr.com</p>
+                </div>
+
+                <div class="contact-form-container">
+                    <!-- Formsubmit.co kullanılıyor. İlk gönderimde mail adresinize onay linki gelecektir. -->
+                    <form action="https://formsubmit.co/omeryavuz3853@gmail.com" method="POST">
+                        <!-- Spam koruması ve ayarlar -->
+                        <input type="hidden" name="_subject" value="Web Sitesinden Yeni Mesaj!">
+                        <input type="hidden" name="_captcha" value="false">
+                        <input type="hidden" name="_next" value="https://omeryavuz3853.github.io/site/thanks.html">
+
+                        <div class="form-group">
+                            <label for="name">Adınız Soyadınız</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-posta Adresiniz</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Telefon Numaranız (Opsiyonel)</label>
+                            <input type="tel" id="phone" name="phone">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-block">Gönder</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Dr. Ömer Yavuz. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
