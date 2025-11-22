@@ -18,7 +18,7 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Dr. Ömer Yavuz</div>
+                <a href="index.html" class="logo" style="text-decoration: none;">Dr. Ömer Yavuz</a>
                 <ul class="nav-links">
                     <li><a href="index.html">Ana Sayfa</a></li>
                     <li><a href="#about">Hakkımda</a></li>
@@ -52,7 +52,8 @@
     <section id="about" class="section">
         <div class="container">
             <h2>Hakkımda</h2>
-            <p>Ankara Gülhane Askeri Tıp Fakültesi'nden mezun oldum. Uzmanlık eğitimimi İstanbul Gülhane Askeri Tıp
+            <p style="text-align: center;">Ankara Gülhane Askeri Tıp Fakültesi'nden mezun oldum. Uzmanlık eğitimimi
+                İstanbul Gülhane Askeri Tıp
                 Akademisi Haydarpaşa Göğüs Cerrahisi Anabilim Dalı'nda tamamladım.</p>
         </div>
     </section>
@@ -79,6 +80,12 @@
                     <h3>Mediasten Hastalıkları</h3>
                     <p>Mediasten bölgesindeki kist ve tümörlerin tanı ve tedavisi.</p>
                 </div>
+                <a href="port-kateter.html" class="project-card"
+                    style="text-decoration: none; color: inherit; cursor: pointer;">
+                    <h3>Port Kateter</h3>
+                    <p>Kemoterapi ve uzun süreli tedavilerde kullanılan port kateter takılması işlemi hakkında detaylı
+                        bilgi.</p>
+                </a>
             </div>
         </div>
     </section>
@@ -118,6 +125,19 @@
         </div>
     </footer>
 
+</body>
+
+<script>
+    // Scroll Efekti: Sayfa aşağı kayınca logo belirsin
+    window.addEventListener('scroll', function () {
+        const logo = document.querySelector('.logo');
+        if (window.scrollY > 300) {
+            logo.classList.add('visible');
+        } else {
+            logo.classList.remove('visible');
+        }
+    });
+</script>
 </body>
 
 </html>

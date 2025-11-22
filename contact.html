@@ -17,7 +17,7 @@
     <header>
         <div class="container">
             <nav>
-                <div class="logo">Dr. Ömer Yavuz</div>
+                <a href="index.html" class="logo" style="text-decoration: none;">Dr. Ömer Yavuz</a>
                 <ul class="nav-links">
                     <li><a href="index.html">Ana Sayfa</a></li>
                     <li><a href="index.html#about">Hakkımda</a></li>
@@ -89,6 +89,19 @@
         </div>
     </footer>
 
+</body>
+
+<script>
+    // Scroll Efekti: Sayfa aşağı kayınca logo belirsin
+    window.addEventListener('scroll', function () {
+        const logo = document.querySelector('.logo');
+        if (window.scrollY > 100) {
+            logo.classList.add('visible');
+        } else {
+            logo.classList.remove('visible');
+        }
+    });
+</script>
 </body>
 
 </html>

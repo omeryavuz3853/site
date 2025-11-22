@@ -1,4 +1,4 @@
-:root {
+﻿:root {
     --primary-color: #0ea5e9;
     /* Medical Blue */
     --secondary-color: #0284c7;
@@ -49,6 +49,17 @@ nav {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--secondary-color);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.logo.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
 .nav-links {
@@ -81,8 +92,6 @@ nav {
     position: relative;
     overflow: hidden;
 }
-
-
 
 .hero-text {
     flex: 1;
@@ -253,8 +262,6 @@ nav {
     /* Center text inside cards too */
 }
 
-
-
 .project-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
@@ -404,5 +411,103 @@ footer {
     .nav-links {
         display: none;
         /* Mobile menu would go here */
+    }
+}
+
+/* Port Kateter Sayfası Stilleri */
+.content-block {
+    margin-bottom: 40px;
+}
+
+.content-block h2 {
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 15px;
+}
+
+.divider {
+    border: 0;
+    height: 1px;
+    background: #e2e8f0;
+    margin: 40px 0;
+}
+
+.flex-container {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.flex-container.reverse {
+    flex-direction: row-reverse;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.image-content {
+    flex: 1;
+    text-align: center;
+}
+
+.info-img {
+    max-width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    border: 1px solid #e2e8f0;
+}
+
+.info-list {
+    list-style: none;
+}
+
+.info-list li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.info-list li::before {
+    content: '\f058'; /* FontAwesome check circle */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--primary-color);
+    position: absolute;
+    left: 0;
+    top: 2px;
+}
+
+.alert-box {
+    background-color: #fff7ed;
+    border-left: 4px solid #f97316;
+    padding: 20px;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.alert-box i {
+    font-size: 1.5rem;
+    color: #f97316;
+}
+
+.alert-box p {
+    margin: 0;
+    color: #9a3412;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .flex-container, .flex-container.reverse {
+        flex-direction: column;
+    }
+    
+    .image-content {
+        margin-top: 20px;
     }
 }
