@@ -7,6 +7,7 @@
     --bg-light: #f8fafc;
     --white: #ffffff;
     --font-main: 'Inter', sans-serif;
+    --font-heading: 'Playfair Display', serif;
 }
 
 * {
@@ -54,6 +55,7 @@ nav {
     transform: translateY(-10px);
     transition: all 0.3s ease;
     text-decoration: none;
+    font-family: var(--font-heading);
 }
 
 .logo.visible {
@@ -145,6 +147,22 @@ nav {
     mix-blend-mode: multiply;
 }
 
+.hero-bg-profile {
+    top: 0;
+    right: 25%;
+    /* Moved significantly left to reveal face */
+    height: 100%;
+    width: 60%;
+    /* Increased width slightly */
+    object-fit: cover;
+    opacity: 0.6;
+    mix-blend-mode: normal;
+    /* Gradient mask on both sides: fade in from left, fade out to right */
+    mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 20%, black 80%, transparent 100%);
+    z-index: 0;
+}
+
 .scalpel-bg {
     top: 25%;
     left: 25%;
@@ -177,7 +195,9 @@ nav {
     text-align: center;
 }
 
-.hero h1 {
+.hero h1,
+.hero-small h1 {
+    font-family: var(--font-heading);
     font-size: 3.5rem;
     margin-bottom: 0.5rem;
     color: #0f172a;
@@ -220,6 +240,7 @@ nav {
 }
 
 .section h2 {
+    font-family: var(--font-heading);
     text-align: center;
     font-size: 2.2rem;
     margin-bottom: 50px;
@@ -267,9 +288,11 @@ nav {
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
 }
 
-.project-card h3 {
+.project-card h3,
+.contact-details h3 {
     margin-bottom: 15px;
     color: #0f172a;
+    font-family: var(--font-heading);
 }
 
 /* Contact Info & Form */
@@ -456,7 +479,7 @@ footer {
 .info-img {
     max-width: 100%;
     border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
     border: 1px solid #e2e8f0;
 }
 
@@ -471,7 +494,8 @@ footer {
 }
 
 .info-list li::before {
-    content: '\f058'; /* FontAwesome check circle */
+    content: '\f058';
+    /* FontAwesome check circle */
     font-family: 'Font Awesome 6 Free';
     font-weight: 900;
     color: var(--primary-color);
@@ -503,10 +527,12 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .flex-container, .flex-container.reverse {
+
+    .flex-container,
+    .flex-container.reverse {
         flex-direction: column;
     }
-    
+
     .image-content {
         margin-top: 20px;
     }

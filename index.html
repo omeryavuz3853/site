@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Ömer Yavuz - Göğüs Cerrahı</title>
+    <title>Op. Dr. Ömer Yavuz - Göğüs Cerrahı</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" type="image/png" href="assets/stethoscope.png">
 </head>
@@ -18,11 +20,12 @@
     <header>
         <div class="container">
             <nav>
-                <a href="index.html" class="logo" style="text-decoration: none;">Dr. Ömer Yavuz</a>
+                <a href="index.html" class="logo" style="text-decoration: none;">Op. Dr. Ömer Yavuz</a>
                 <ul class="nav-links">
                     <li><a href="index.html">Ana Sayfa</a></li>
                     <li><a href="#about">Hakkımda</a></li>
                     <li><a href="#interests">İlgi Alanları</a></li>
+                    <li><a href="port-catheter.html">Port Kateter</a></li>
                     <li><a href="#contact">İletişim</a></li>
                 </ul>
             </nav>
@@ -32,7 +35,7 @@
     <section id="home" class="hero">
         <div class="container hero-container">
             <div class="hero-text">
-                <h1>Dr. Ömer Yavuz</h1>
+                <h1>Op. Dr. Ömer Yavuz</h1>
                 <p>Göğüs Cerrahı</p>
                 <a href="#contact" class="btn">Randevu / İletişim</a>
             </div>
@@ -44,6 +47,7 @@
             </div>
         </div>
         <div class="hero-bg-icons">
+            <img src="assets/hero_profile.jpg" alt="" class="bg-icon hero-bg-profile">
             <img src="assets/scalpel_bg.png" alt="" class="bg-icon scalpel-bg">
             <img src="assets/stethoscope_bg.png" alt="" class="bg-icon stethoscope-bg">
         </div>
@@ -53,8 +57,8 @@
         <div class="container">
             <h2>Hakkımda</h2>
             <p style="text-align: center;">Ankara Gülhane Askeri Tıp Fakültesi'nden mezun oldum. Uzmanlık eğitimimi
-                İstanbul Gülhane Askeri Tıp
-                Akademisi Haydarpaşa Göğüs Cerrahisi Anabilim Dalı'nda tamamladım.</p>
+                İstanbul Gülhane Askeri Tıp Akademisi Haydarpaşa Göğüs Cerrahisi Anabilim Dalı'nda tamamladım. Detaylı
+                bilgi için en alttaki bağlantıları takip edebilirsiniz.</p>
         </div>
     </section>
 
@@ -80,7 +84,7 @@
                     <h3>Mediasten Hastalıkları</h3>
                     <p>Mediasten bölgesindeki kist ve tümörlerin tanı ve tedavisi.</p>
                 </div>
-                <a href="port-kateter.html" class="project-card"
+                <a href="port-catheter.html" class="project-card"
                     style="text-decoration: none; color: inherit; cursor: pointer;">
                     <h3>Port Kateter</h3>
                     <p>Kemoterapi ve uzun süreli tedavilerde kullanılan port kateter takılması işlemi hakkında detaylı
@@ -121,7 +125,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Dr. Ömer Yavuz. Tüm hakları saklıdır.</p>
+            <p>&copy; 2026 Op. Dr. Ömer Yavuz. Tüm hakları saklıdır.</p>
         </div>
     </footer>
 
@@ -131,7 +135,7 @@
     // Scroll Efekti: Sayfa aşağı kayınca logo belirsin
     window.addEventListener('scroll', function () {
         const logo = document.querySelector('.logo');
-        if (window.scrollY > 300) {
+        if (window.scrollY > 50) {
             logo.classList.add('visible');
         } else {
             logo.classList.remove('visible');
