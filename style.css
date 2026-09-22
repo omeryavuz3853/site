@@ -1,4 +1,5 @@
-﻿:root {
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Cormorant+Garamond:wght@400;500&display=swap');
+:root {
     --primary-color: #0ea5e9;
     /* Medical Blue */
     --secondary-color: #0284c7;
@@ -505,8 +506,8 @@ footer {
 }
 
 .alert-box {
-    background-color: #fff7ed;
-    border-left: 4px solid #f97316;
+    background-color: #f6f7f8;
+    border-left: 4px solid #a8444f;
     padding: 20px;
     border-radius: 6px;
     display: flex;
@@ -517,12 +518,12 @@ footer {
 
 .alert-box i {
     font-size: 1.5rem;
-    color: #f97316;
+    color: #a8444f;
 }
 
 .alert-box p {
     margin: 0;
-    color: #9a3412;
+    color: #435561;
     font-weight: 600;
 }
 
@@ -537,3 +538,19 @@ footer {
         margin-top: 20px;
     }
 }
+/* Shared palette and typography for retained standalone pages. */
+:root{--primary-color:#111c25;--secondary-color:#435561;--text-color:#53616c;--bg-light:#f6f7f8;--font-main:'Manrope',Arial,sans-serif;--font-heading:'Cormorant Garamond',Georgia,serif}
+header{background:#111c25;box-shadow:none;border-bottom:1px solid #ffffff20}
+header .logo,header .logo.visible{color:#f5f3ef;opacity:1;visibility:visible;transform:none;font-weight:400;font-size:29px}
+.nav-links a{color:#bec9d0}.nav-links a:hover,.nav-links a.active{color:#fff}
+.hero,.hero-small{background:#111c25;color:#bec9d0}
+.hero-small h1{color:#f5f3ef;font-family:var(--font-heading);font-weight:400}
+.hero-small p{color:#bec9d0}
+h1,h2,h3{font-family:var(--font-heading);color:#111c25;font-weight:500}
+.content-block h2{color:#111c25;border-color:#dce0e3}
+.btn{background:#111c25;color:#fff;border-radius:0}.btn:hover{background:#364b59}
+footer{background:#111c25;color:#aab6bf}
+.thanks-container{min-height:60vh;height:auto;padding-top:120px;padding-bottom:70px}
+.thanks-container h1{color:#111c25;font-size:clamp(40px,7vw,64px);font-weight:400}
+.warning-box,.important-note{background:#f6f7f8;border-color:#a8444f;color:#435561}
+@media(max-width:768px){header{position:static}nav{height:auto;min-height:80px;flex-direction:column;align-items:flex-start;gap:12px;padding:18px 0}.nav-links{display:flex;flex-wrap:wrap;gap:12px;font-size:13px}.hero-small{padding-top:40px}.thanks-container{padding-top:60px}}
