@@ -1,151 +1,77 @@
-<!DOCTYPE html>
-<html lang="tr">
+<!doctype html>
+<html lang="tr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="robots" content="noindex"><title>Ömer Yavuz | Tasarım önizlemesi</title><style>body{margin:0}</style></head><body>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&family=Cormorant+Garamond:wght@400;500&display=swap');
+#oyv2{--oy-ink:#111c25;--oy-paper:#fff;--oy-muted:#aab6bf;--oy-red:#a8444f;--oy-line:#dce0e3;background:var(--oy-paper);color:var(--oy-ink);font:16px/1.65 'Manrope',Arial,sans-serif;color-scheme:light}#oyv2 *{box-sizing:border-box}#oyv2 input[type=hidden]{display:none!important}#oyv2 [hidden]{display:none!important}#oyv2 a{color:inherit;text-decoration:none}#oyv2 button,#oyv2 input,#oyv2 select,#oyv2 textarea{font:inherit}#oyv2 button{cursor:pointer}#oyv2 a:focus-visible,#oyv2 button:focus-visible,#oyv2 summary:focus-visible{outline:3px solid #b75c65;outline-offset:5px}#oyv2 .wrap{max-width:1320px;margin:auto;padding:0 52px}#oyv2 .top{background:var(--oy-ink);color:#fff;border-bottom:1px solid #ffffff20}#oyv2 .nav{display:flex;justify-content:space-between;align-items:center;gap:24px;min-height:92px}#oyv2 .brand{font-family:'Cormorant Garamond',Georgia,serif;font-size:29px;letter-spacing:-.5px;white-space:nowrap}#oyv2 .navlinks{display:flex;flex-wrap:wrap;gap:24px;align-items:center;font-size:14px}#oyv2 .navlinks a{padding:10px 0;color:#c0c8cd}#oyv2 .navlinks a:hover,#oyv2 .navlinks a[aria-current=page]{color:#fff}#oyv2 .navlinks .contactlink{border-bottom:1px solid #b86570;color:#fff}#oyv2 .stage{position:relative;isolation:isolate;overflow:hidden;background:var(--oy-ink);color:#fff}#oyv2 .portrait{position:absolute;right:0;top:0;bottom:0;width:63%;z-index:-1;pointer-events:none}#oyv2 .portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 34%;opacity:.86;mask-image:linear-gradient(90deg,transparent,black 24%,black 83%,transparent 100%);-webkit-mask-image:linear-gradient(90deg,transparent,black 24%,black 83%,transparent 100%)}#oyv2 .portrait:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#111c25 0%,#111c2560 22%,transparent 48%),linear-gradient(0deg,#111c25 0%,#111c2580 16%,transparent 50%)}#oyv2 .hero{min-height:620px;padding-top:79px;padding-bottom:64px;position:relative}#oyv2 .hero-copy{width:49%;max-width:530px}#oyv2 .eyebrow{font-size:12px;letter-spacing:2.6px;text-transform:uppercase;display:flex;gap:15px;align-items:center;color:#bfc9d0;margin:0 0 35px}#oyv2 .eyebrow:before{content:'';height:1px;width:35px;background:#b86570}#oyv2 .title-small{font-size:15px;letter-spacing:1px;color:#bec9d0;margin:0 0 5px}#oyv2 h1{font-family:'Cormorant Garamond',Georgia,serif;font-size:112px;line-height:.89;letter-spacing:-3px;font-weight:400;margin:0 0 30px}#oyv2 h1 span{display:block}#oyv2 .specialty{font-size:22px;font-weight:400;margin:0 0 20px;letter-spacing:.2px}#oyv2 .hospital{max-width:325px;font-size:15px;color:#bcc6cd;line-height:1.8;margin:0 0 30px}#oyv2 .textlink{display:inline-flex;gap:30px;align-items:center;border-bottom:1px solid #89949d;padding:8px 0;font-size:14px}#oyv2 .textlink:hover{color:#cf8b94}#oyv2 .education{display:flex;gap:24px;align-items:center;padding-top:27px;padding-bottom:27px;border-bottom:1px solid var(--oy-line)}#oyv2 .seal{width:85px;height:85px;object-fit:contain;border-radius:50%;flex-shrink:0}#oyv2 .education p{margin:0;font-size:14px;color:#53616c}#oyv2 .education strong{display:block;font-size:18px;font-weight:500;color:var(--oy-ink);margin:3px 0}#oyv2 .education .alumni{margin-left:auto;font-family:'Cormorant Garamond',Georgia,serif;font-size:29px;color:#64727b;text-align:right;line-height:1.2}#oyv2 .gateways{display:grid;grid-template-columns:repeat(3,1fr);padding-top:38px;padding-bottom:44px;gap:32px}#oyv2 .gateway{padding:7px 0 12px;border-bottom:1px solid #adb7bf}#oyv2 .gateway small{font-size:12px;color:#7b3c44;letter-spacing:1.3px}#oyv2 .gateway h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:29px;font-weight:500;margin:12px 0 7px;line-height:1.2;display:flex;justify-content:space-between;gap:8px}#oyv2 .gateway p{font-size:14px;color:#53616c;margin:0}#oyv2 .gateway:hover h2{color:#913f49}#oyv2 .page{padding-top:55px;padding-bottom:65px;min-height:640px}#oyv2 .back{display:inline-block;font-size:13px;color:#667680;margin-bottom:28px}#oyv2 .kicker{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#913f49;margin:0 0 12px}#oyv2 .page h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:64px;line-height:1.05;font-weight:400;letter-spacing:-1.5px;margin:0 0 28px}#oyv2 .lead{max-width:650px;font-size:18px;color:#53616c;margin:0 0 34px}#oyv2 .bio-grid{display:grid;grid-template-columns:1.4fr 1fr;gap:65px;align-items:start}#oyv2 .bio-grid p{color:#53616c}#oyv2 .bio-grid img{width:100%;max-height:420px;object-fit:cover;object-position:50% 60%}#oyv2 .timeline{margin-top:35px;border-top:1px solid var(--oy-line)}#oyv2 .timeline>div{display:grid;grid-template-columns:100px 1fr;gap:15px;padding:20px 0;border-bottom:1px solid var(--oy-line)}#oyv2 .timeline time{font-size:14px;color:#913f49}#oyv2 .timeline p{margin:0;font-size:15px}#oyv2 .timeline strong{display:block;font-weight:500;color:var(--oy-ink)}#oyv2 .clinical-row{border-top:1px solid var(--oy-line);padding:22px 0;display:grid;grid-template-columns:1fr 1fr;gap:35px}#oyv2 .clinical-row h3{font-size:23px;font-weight:400;margin:0}#oyv2 .clinical-row p{font-size:16px;color:#53616c;margin:0}#oyv2 .smalllink{color:#79343f;text-decoration:underline;text-underline-offset:5px}#oyv2 .patient-entry{margin-top:35px;padding:24px 0;border-top:1px solid var(--oy-line);border-bottom:1px solid var(--oy-line);display:flex;justify-content:space-between;gap:25px;align-items:center}#oyv2 .patient-entry h3{font-size:23px;font-weight:400;margin:0 0 6px}#oyv2 .patient-entry p{color:#53616c;margin:0;font-size:15px}#oyv2 .contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:65px}#oyv2 .contact-details h3{font-size:18px;font-weight:500;margin:0 0 12px}#oyv2 .contact-details p{font-size:15px;color:#53616c;margin:0 0 25px}#oyv2 .contact-details a{overflow-wrap:anywhere}#oyv2 .contact-details .mail{font-size:19px;color:var(--oy-ink)}#oyv2 form{display:grid;gap:19px}#oyv2 .form-row{display:grid;grid-template-columns:1fr 1fr;gap:20px}#oyv2 label{display:block;font-size:14px;color:#364b59}#oyv2 input,#oyv2 select,#oyv2 textarea{display:block;width:100%;min-width:0;background:#f6f7f8;border:1px solid #d0d8de;border-radius:0;padding:12px;color:var(--oy-ink);font-size:16px;margin-top:6px}#oyv2 textarea{resize:vertical;min-height:125px}#oyv2 .send{justify-self:start;padding:13px 27px;background:var(--oy-ink);color:#fff;border:0;font-size:15px}#oyv2 .form-note{font-size:13px;color:#657580;margin:0}#oyv2 .form-status{font-size:14px;color:#853d47;margin:0}#oyv2 .footer{border-top:1px solid var(--oy-line);padding-top:22px;padding-bottom:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:20px;font-size:12px;color:#677781}#oyv2 .footer-links{display:flex;flex-wrap:wrap;gap:20px}#oyv2 .footer a:hover{text-decoration:underline}#oyv2 .skip{position:absolute;left:-10000px}#oyv2 .skip:focus{position:static;display:block;padding:10px;background:white;color:#111c25}
+@media(min-width:1150px){#oyv2 .hero{min-height:710px;padding-top:110px}#oyv2 h1{font-size:135px}}
+@media(max-width:850px){#oyv2 .wrap{padding-left:30px;padding-right:30px}#oyv2 .nav{gap:18px;min-height:95px}#oyv2 .navlinks{gap:13px;font-size:12px}#oyv2 h1{font-size:91px}#oyv2 .hero{min-height:580px;padding-top:65px}#oyv2 .portrait{width:66%}#oyv2 .specialty{font-size:20px}#oyv2 .education .alumni{display:none}#oyv2 .gateway h2{font-size:26px}#oyv2 .bio-grid,#oyv2 .contact-grid{gap:32px}#oyv2 .page h2{font-size:54px}}
+@media(max-width:620px){#oyv2 .wrap{padding-left:24px;padding-right:24px}#oyv2 .nav{padding-top:20px;padding-bottom:15px;display:block}#oyv2 .navlinks{gap:10px 20px;margin-top:12px;font-size:13px}#oyv2 .navlinks a{min-height:38px;display:inline-flex;align-items:center;padding:5px 0}#oyv2 .hero{min-height:690px;padding-top:38px;padding-bottom:285px}#oyv2 .hero-copy{width:100%;max-width:none}#oyv2 h1{font-size:82px;line-height:.95;margin-bottom:22px}#oyv2 h1 span{display:inline}#oyv2 h1 span+span:before{content:' '}#oyv2 .eyebrow{margin-bottom:22px;font-size:11px}#oyv2 .hospital{font-size:14px;max-width:270px;margin-bottom:16px}#oyv2 .specialty{font-size:20px;margin-bottom:12px}#oyv2 .portrait{width:100%;height:420px;top:auto;bottom:0}#oyv2 .portrait img{object-position:50% 29%;mask-image:linear-gradient(0deg,transparent,black 30%,black 75%,transparent);-webkit-mask-image:linear-gradient(0deg,transparent,black 30%,black 75%,transparent)}#oyv2 .portrait:after{background:linear-gradient(180deg,#111c25 0%,transparent 32%,transparent 65%,#111c25 100%),linear-gradient(90deg,#111c2555,transparent 30%,transparent 70%,#111c2555)}#oyv2 .education{gap:17px;padding-top:24px;padding-bottom:24px}#oyv2 .seal{width:70px;height:70px}#oyv2 .education strong{font-size:16px}#oyv2 .education p{font-size:12px}#oyv2 .gateways{grid-template-columns:1fr;gap:17px;padding-top:25px;padding-bottom:30px}#oyv2 .gateway h2{margin-top:5px;font-size:29px}#oyv2 .page{padding-top:30px;padding-bottom:40px;min-height:550px}#oyv2 .page h2{font-size:46px}#oyv2 .lead{font-size:16px}#oyv2 .bio-grid,#oyv2 .contact-grid,#oyv2 .clinical-row{grid-template-columns:1fr;gap:22px}#oyv2 .form-row{grid-template-columns:1fr;gap:19px}#oyv2 .timeline>div{grid-template-columns:75px 1fr}#oyv2 .clinical-row h3{font-size:21px}#oyv2 .footer{font-size:12px}#oyv2 .contact-grid{gap:30px}}
+@media(prefers-reduced-motion:no-preference){#oyv2 a{transition:color .18s ease}}
+#oyv2 .hero h1,#oyv2 .hero h1 span{color:#f5f3ef!important;-webkit-text-fill-color:#f5f3ef}#oyv2 .hero .specialty{color:#f5f3ef}#oyv2 .portrait{width:48%;height:82%;top:auto;bottom:0;right:3%}#oyv2 .portrait img{opacity:.58;object-fit:contain;object-position:center bottom;mask-image:radial-gradient(ellipse at 52% 43%,black 20%,#000b 48%,transparent 73%);-webkit-mask-image:radial-gradient(ellipse at 52% 43%,black 20%,#000b 48%,transparent 73%)}#oyv2 .portrait:after{background:linear-gradient(0deg,#111c25 0%,transparent 35%)}#oyv2 .education-copy{display:grid;grid-template-columns:1fr 1.5fr;gap:30px;flex:1}#oyv2 .education-copy strong{font-size:16px;line-height:1.5}#oyv2 .education-copy p{font-size:13px}#oyv2 .clinical-row:hover h3{color:#913f49}#oyv2 .clinical-row h3 span{font-size:17px}#oyv2 .article-copy{max-width:730px;margin-bottom:25px}#oyv2 .article-copy p{color:#53616c;font-size:16px}#oyv2 .article-copy .lead{font-size:20px}#oyv2 .article-copy h3,#oyv2 .academic-layout h3{font-size:22px;font-weight:500;color:#111c25;margin:28px 0 10px}#oyv2 .article-copy .source-note{font-size:13px;margin-top:30px}#oyv2 .source-note a{text-decoration:underline}#oyv2 .academic-layout{display:grid;grid-template-columns:1.3fr 1fr;gap:60px;border-top:1px solid #dce0e3}#oyv2 .muted-copy{color:#53616c}#oyv2 .profile-list{list-style:none;margin:0;padding:0}#oyv2 .profile-list li{display:flex;justify-content:space-between;gap:20px;padding:14px 0;border-bottom:1px solid #dce0e3;color:#687783}#oyv2 .profile-list small{font-size:12px}#oyv2 .footer .inactive{color:#78858f}#oyv2 .contact-details .reply-note{font-size:17px;line-height:1.8;max-width:330px;color:#435561}#oyv2 .page h2,#oyv2 .gateway h2{color:#111c25}
+@media(max-width:850px){#oyv2 .portrait{width:49%;right:1%;height:78%}#oyv2 .education-copy{gap:20px}}
+@media(max-width:620px){#oyv2 .portrait{width:86%;height:320px;right:7%;bottom:0;top:auto}#oyv2 .portrait img{object-position:center bottom;opacity:.58}#oyv2 .hero{min-height:640px;padding-bottom:265px}#oyv2 .education{align-items:flex-start}#oyv2 .education-copy{grid-template-columns:1fr;gap:15px}#oyv2 .education-copy strong{font-size:14px}#oyv2 .education-copy p{font-size:12px}#oyv2 .seal{width:62px;height:62px}#oyv2 .academic-layout{grid-template-columns:1fr;gap:5px}#oyv2 .contact-details .reply-note{max-width:none}}
+#oyv2 .about-screen{position:relative;isolation:isolate;overflow:hidden;background:#111c25;color:#f5f3ef;min-height:870px}#oyv2 .about-background{position:absolute;inset:0;z-index:-1;pointer-events:none}#oyv2 .about-background img{display:block;position:absolute;right:0;top:0;width:79%;height:100%;object-fit:cover;object-position:60% 49%;opacity:.58}#oyv2 .about-background:after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,#111c25 0%,#111c25f5 24%,#111c25d9 44%,#111c2580 68%,#111c2533 100%),linear-gradient(0deg,#111c25 0%,transparent 30%,transparent 78%,#111c2566 100%)}#oyv2 .about-content{position:relative;padding-top:38px;padding-bottom:62px}#oyv2 .about-content .back{color:#c0cbd2;margin-bottom:25px}#oyv2 .about-content .kicker{color:#d09ba3;margin-bottom:10px}#oyv2 .about-content h2{font:400 70px/1.06 'Cormorant Garamond',Georgia,serif;letter-spacing:-1.6px;margin:0 0 35px;color:#f5f3ef!important;-webkit-text-fill-color:#f5f3ef}#oyv2 .about-facts{max-width:590px;margin:0}#oyv2 .about-facts>div{padding-bottom:23px;margin-bottom:22px;border-bottom:1px solid #ffffff26}#oyv2 .about-facts dt{font-size:12px;letter-spacing:1.8px;text-transform:uppercase;color:#cba2a7;margin-bottom:9px}#oyv2 .about-facts dd{margin:0;font-size:18px;line-height:1.65;color:#f5f3ef}#oyv2 .fact-meta{display:block;margin-top:5px;font-size:14px;color:#bbc8d1;letter-spacing:.15px}#oyv2 .memberships{max-width:590px;margin-top:30px}#oyv2 .memberships h3{font:400 31px/1.2 'Cormorant Garamond',Georgia,serif;color:#f5f3ef;margin:0 0 16px}#oyv2 .memberships ul{list-style:none;padding:0;margin:0}#oyv2 .memberships li{border-bottom:1px solid #ffffff1a}#oyv2 .memberships a{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0;color:#e0e6eb;font-size:15px;line-height:1.5}#oyv2 .memberships a:hover{color:#fff;text-decoration:underline;text-underline-offset:4px}#oyv2 .memberships .abbr{color:#b8c5ce}#oyv2 .memberships a>span:last-child{color:#cba2a7;flex-shrink:0}
+@media(max-width:850px){#oyv2 .about-facts,#oyv2 .memberships{max-width:70%}#oyv2 .about-background img{width:100%;object-position:70% 48%}#oyv2 .about-background:after{background:linear-gradient(90deg,#111c25fa 0%,#111c25ed 36%,#111c25b3 65%,#111c2570 100%),linear-gradient(0deg,#111c25,transparent 45%)}#oyv2 .about-facts dd{font-size:17px}}
+@media(max-width:620px){#oyv2 .about-screen{min-height:0}#oyv2 .about-content{padding-top:26px;padding-bottom:40px}#oyv2 .about-content h2{font-size:52px;margin-bottom:30px}#oyv2 .about-facts,#oyv2 .memberships{max-width:none}#oyv2 .about-facts dd{font-size:16px}#oyv2 .about-facts>div{padding-bottom:20px;margin-bottom:20px}#oyv2 .about-background img{object-position:57% 42%;opacity:.33}#oyv2 .about-background:after{background:linear-gradient(90deg,#111c25e8,#111c25b3),linear-gradient(0deg,#111c25 0%,transparent 55%)}#oyv2 .memberships a{font-size:14px;min-height:48px}#oyv2 .memberships h3{font-size:29px}}
+</style>
+<div id="oyv2">
+<header class="top"><a class="skip" href="#oy-content">İçeriğe geç</a><nav class="wrap nav" aria-label="Ana menü"><a href="#home" data-page="home" class="brand">Ömer Yavuz</a><div class="navlinks"><a href="#about" data-page="about">Hakkımda</a><a href="#clinical" data-page="clinical">Klinik çalışmalar</a><a href="#academic" data-page="academic">Akademik çalışmalar</a><a href="#contact" data-page="contact" class="contactlink">İletişim</a></div></nav></header>
+<main id="oy-content">
+<section data-view="home" aria-label="Ana sayfa">
+<div class="stage"><div class="portrait"><img src="assets/portrait.jpg" alt="Ömer Yavuz portresi" width="1568" height="1592"></div><div class="wrap hero"><div class="hero-copy"><p class="eyebrow">Göğüs cerrahisi · İstanbul</p><p class="title-small">Op. Dr.</p><h1><span>Ömer</span><span>Yavuz</span></h1><p class="specialty">Göğüs Cerrahisi Uzmanı</p><p class="hospital">Başakşehir Çam ve Sakura<br>Şehir Hastanesi</p><a class="textlink" href="#about" data-page="about">Beni tanıyın <span aria-hidden="true">↗</span></a></div></div></div>
+<div class="wrap education"><img class="seal" src="assets/gata_logo.jpg" alt="Gülhane Askeri Tıp Fakültesi amblemi" width="85" height="85"><div class="education-copy"><div><p>Fakülte</p><strong>Gülhane Askeri Tıp Fakültesi / Ankara</strong></div><div><p>Uzmanlık</p><strong>Gülhane Askeri Tıp Akademisi Haydarpaşa Eğitim ve Araştırma Hastanesi / İstanbul</strong></div></div></div>
+<div class="wrap gateways"><a class="gateway" href="#clinical" data-page="clinical"><small>KLİNİK</small><h2>Çalışma alanlarım <span aria-hidden="true">↗</span></h2><p>Göğüs cerrahisindeki ilgi alanlarım.</p></a><a class="gateway" href="#academic" data-page="academic"><small>AKADEMİK</small><h2>Akademik çalışmalar <span aria-hidden="true">↗</span></h2><p>Yayınlar ve akademik profiller.</p></a><a class="gateway" href="#contact" data-page="contact"><small>İLETİŞİM</small><h2>Bana ulaşın <span aria-hidden="true">↗</span></h2><p>E-posta ve iletişim formu.</p></a></div>
+</section>
+<section data-view="about" class="about-screen" hidden aria-label="Hakkımda">
+<div class="about-background" aria-hidden="true"><img src="assets/hero_profile.jpg" alt="" width="768" height="1024"></div>
+<div class="wrap about-content"><a class="back" href="#home" data-page="home">← Ana sayfa</a><p class="kicker">Ömer Yavuz</p><h2>Hakkımda.</h2>
+<dl class="about-facts">
+<div><dt>Tıp fakültesi</dt><dd>Ankara Gülhane Askeri Tıp Fakültesi <span class="fact-meta">2009 / Ankara</span></dd></div>
+<div><dt>Uzmanlık</dt><dd>Gülhane Askeri Tıp Akademisi Haydarpaşa Eğitim ve Araştırma Hastanesi Göğüs Cerrahisi Kliniği <span class="fact-meta">2018 / İstanbul</span></dd></div>
+<div><dt>Mevcut görev yeri</dt><dd>Başakşehir Çam ve Sakura Şehir Hastanesi<span class="fact-meta">Göğüs Cerrahisi Servisi</span></dd></div>
+</dl>
+<div class="memberships"><h3>Mesleki üyelikler</h3><ul>
+<li><a href="https://www.ests.org/" target="_blank" rel="noopener noreferrer"><span>European Society of Thoracic Surgeons <span class="abbr">(ESTS)</span></span><span aria-hidden="true">↗</span></a></li>
+<li><a href="https://www.asianthoracicacademy.org/" target="_blank" rel="noopener noreferrer"><span>Asian Thoracic Academy <span class="abbr">(ATA)</span></span><span aria-hidden="true">↗</span></a></li>
+<li><a href="https://tgcd.org.tr/" target="_blank" rel="noopener noreferrer"><span>Türk Göğüs Cerrahisi Derneği <span class="abbr">(TGCD)</span></span><span aria-hidden="true">↗</span></a></li>
+<li><a href="https://toraks.org.tr/" target="_blank" rel="noopener noreferrer"><span>Türk Toraks Derneği <span class="abbr">(TTD)</span></span><span aria-hidden="true">↗</span></a></li>
+</ul></div>
+</div></section>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Op. Dr. Ömer Yavuz - Göğüs Cerrahı</title>
-    <meta name="description"
-        content="Op. Dr. Ömer Yavuz, İstanbul Başakşehir Çam ve Sakura Şehir Hastanesi'nde Göğüs Cerrahisi uzmanı. Akciğer kanseri, minimal invaziv cerrahi (VATS/RATS), göğüs duvarı ameliyatları ve port kateter işlemleri.">
-    <meta name="keywords"
-        content="Ömer Yavuz, Göğüs Cerrahı, Akciğer Kanseri, VATS, RATS, Port Kateter, Pektus, İstanbul Göğüs Cerrahisi">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="icon" type="image/png" href="assets/stethoscope.png">
-</head>
+<section data-view="clinical" class="wrap page" hidden aria-label="Klinik çalışmalar"><a class="back" href="#home" data-page="home">← Ana sayfa</a><p class="kicker">Klinik çalışmalar</p><h2>Çalışma alanlarım.</h2><p class="lead">Her başlık altında ilgili hastalık ve cerrahi yaklaşıma ilişkin kısa açıklamaları bulabilirsiniz.</p>
+<a class="clinical-row" href="#lung" data-page="lung"><h3>Akciğer kanseri cerrahisi <span aria-hidden="true">↗</span></h3><p>Cerrahi tedavinin yeri ve ameliyat öncesi değerlendirme.</p></a>
+<a class="clinical-row" href="#minimal" data-page="minimal"><h3>Minimal invaziv cerrahi <span aria-hidden="true">↗</span></h3><p>Video yardımlı ve robot yardımlı göğüs cerrahisi.</p></a>
+<a class="clinical-row" href="#mediastinum" data-page="mediastinum"><h3>Mediasten hastalıkları <span aria-hidden="true">↗</span></h3><p>İki akciğer arasında yer alan bölgenin kist ve tümörleri.</p></a>
+<a class="clinical-row" href="#chestwall" data-page="chestwall"><h3>Göğüs duvarı cerrahisi <span aria-hidden="true">↗</span></h3><p>Göğüs kafesi şekil bozuklukları ve göğüs duvarı tümörleri.</p></a>
+<a class="clinical-row" href="#port" data-page="port"><h3>Port kateter <span aria-hidden="true">↗</span></h3><p>Uzun süreli damar erişimi, başvuru ve bakım.</p></a></section>
+<section data-view="lung" class="wrap page" hidden aria-label="Akciğer kanseri cerrahisi"><a class="back" href="#clinical" data-page="clinical">← Klinik çalışmalar</a><p class="kicker">Akciğer cerrahisi</p><h2>Akciğer kanseri<br>cerrahisi.</h2><div class="article-copy"><p class="lead">Cerrahi, uygun hastalarda akciğer kanseri tedavisinin bir parçasıdır.</p><h3>Nasıl planlanır?</h3><p>Tedavi planında tümörün türü, yerleşimi ve yaygınlığı ile hastanın genel sağlık durumu birlikte değerlendirilir. Cerrahi, bazı hastalarda diğer kanser tedavileriyle birlikte uygulanabilir.</p><h3>Ameliyatın kapsamı</h3><p>Ameliyatta çıkarılacak akciğer dokusunun miktarı hastalığın özelliklerine göre belirlenir. Cerrahi seçenekler ve iyileşme süreci, ameliyat öncesi görüşmede hastaya özel olarak ele alınır.</p><p class="source-note">Bilgi kaynağı: <a href="https://www.nhs.uk/conditions/lung-cancer/treatment/" target="_blank" rel="noopener noreferrer">NHS · Akciğer kanseri tedavisi</a></p></div><a class="textlink" href="#contact" data-page="contact">İletişim ↗</a></section>
+<section data-view="minimal" class="wrap page" hidden aria-label="Minimal invaziv cerrahi"><a class="back" href="#clinical" data-page="clinical">← Klinik çalışmalar</a><p class="kicker">Cerrahi yaklaşımlar</p><h2>Minimal invaziv<br>cerrahi.</h2><div class="article-copy"><p class="lead">Göğüs boşluğuna küçük kesilerden ulaşılarak, kamera ve özel cerrahi aletler yardımıyla yapılan ameliyatları kapsar.</p><h3>VATS ve robot yardımlı cerrahi</h3><p>VATS, video yardımlı torakoskopik cerrahinin kısaltmasıdır. Robot yardımlı cerrahide ise cerrah, ameliyat aletlerini bir konsol üzerinden kontrol eder.</p><h3>Yöntem seçimi</h3><p>Uygun yaklaşım, hastalığın özellikleri ve planlanan işleme göre belirlenir. Her ameliyatın kapalı yöntemle yapılması mümkün olmayabilir; gerektiğinde açık cerrahi uygulanabilir.</p><p class="source-note">Bilgi kaynağı: <a href="https://www.mayoclinic.org/tests-procedures/video-assisted-thoracic-surgery/about/pac-20384922" target="_blank" rel="noopener noreferrer">Mayo Clinic · VATS</a></p></div><a class="textlink" href="#contact" data-page="contact">İletişim ↗</a></section>
+<section data-view="mediastinum" class="wrap page" hidden aria-label="Mediasten hastalıkları"><a class="back" href="#clinical" data-page="clinical">← Klinik çalışmalar</a><p class="kicker">Mediasten</p><h2>Mediasten<br>hastalıkları.</h2><div class="article-copy"><p class="lead">Mediasten, göğüs boşluğunda iki akciğer arasında kalan bölgedir.</p><h3>Çalışma alanı</h3><p>Bu bölgede yer alan kist ve tümörlerin tanısı ve cerrahi tedavisi, göğüs cerrahisinin çalışma alanları arasındadır.</p><h3>Değerlendirme</h3><p>İncelemeler, oluşumun yerleşimi ve çevre yapılarla ilişkisi dikkate alınarak planlanır. Takip, ileri inceleme veya cerrahi gereksinimi her hasta için ayrı değerlendirilir.</p></div><a class="textlink" href="#contact" data-page="contact">İletişim ↗</a></section>
+<section data-view="chestwall" class="wrap page" hidden aria-label="Göğüs duvarı cerrahisi"><a class="back" href="#clinical" data-page="clinical">← Klinik çalışmalar</a><p class="kicker">Göğüs duvarı</p><h2>Göğüs duvarı<br>cerrahisi.</h2><div class="article-copy"><p class="lead">Göğüs kafesi şekil bozuklukları ve göğüs duvarı tümörleri bu çalışma alanında değerlendirilir.</p><h3>Şekil bozuklukları</h3><p>Kunduracı göğsü (pektus ekskavatum) ve güvercin göğsü (pektus karinatum), göğüs kafesinin şekil bozuklukları arasındadır. Tedavi gereksinimi ve yöntem seçimi kişiye özel değerlendirilir.</p><h3>Göğüs duvarı tümörleri</h3><p>Tedavi planı, kitlenin özellikleri ve tanısal değerlendirme sonucuna göre belirlenir. Cerrahi gereken hastalarda çıkarılacak dokular ve onarım gereksinimi birlikte ele alınır.</p></div><a class="textlink" href="#contact" data-page="contact">İletişim ↗</a></section>
+<section data-view="port" class="wrap page" hidden aria-label="Port kateter"><a class="back" href="#clinical" data-page="clinical">← Klinik çalışmalar</a><p class="kicker">Damar erişimi</p><h2>Port kateter.</h2><div class="article-copy"><p class="lead">Kemoterapi ve uzun süreli damar içi tedavilerde kullanılabilen, cilt altına yerleştirilen bir damar erişim sistemidir.</p><h3>Başvuru süreci</h3><p>Port gereksinimi, tedavinizi düzenleyen hekim tarafından değerlendirilir. İşlem öncesinde muayene ve gerekli tetkikler yapılarak yerleştirme planı oluşturulur.</p><h3>Kullanım ve bakım</h3><p>Portun kullanımı ve bakımı eğitimli sağlık personeli tarafından gerçekleştirilir. İşlem sonrası bakım ve kontrol planı, tedavi sürecinize göre açıklanır.</p><a class="textlink" href="port-catheter.html">Ayrıntılı port kateter bilgilendirmesi ↗</a></div></section>
+<section data-view="academic" class="wrap page" hidden aria-label="Akademik çalışmalar"><a class="back" href="#home" data-page="home">← Ana sayfa</a><p class="kicker">Akademik çalışmalar</p><h2>Yayınlar ve<br>akademik profiller.</h2><p class="lead">Bu bölümün içeriği daha sonra eklenecektir.</p><div class="academic-layout"><div><h3>Seçilmiş yayınlar</h3><p class="muted-copy">Yayın listesi henüz paylaşılmamıştır.</p><div id="oy-publications"></div></div><div><h3>Akademik profiller</h3><ul class="profile-list" aria-label="Henüz etkinleştirilmemiş akademik profiller"><li><span aria-disabled="true">Google Scholar</span><small>Yakında</small></li><li><span aria-disabled="true">ORCID</span><small>Yakında</small></li><li><span aria-disabled="true">Web of Science</span><small>Yakında</small></li><li><span aria-disabled="true">ISNI</span><small>Yakında</small></li></ul></div></div></section>
 
-<body>
 
-    <header>
-        <div class="container">
-            <nav>
-                <a href="index.html" class="logo" style="text-decoration: none;">Op. Dr. Ömer Yavuz</a>
-                <ul class="nav-links">
-                    <li><a href="index.html">Ana Sayfa</a></li>
-                    <li><a href="#about">Hakkımda</a></li>
-                    <li><a href="#interests">İlgi Alanları</a></li>
-                    <li><a href="port-catheter.html">Port Kateter</a></li>
-                    <li><a href="#contact">İletişim</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+<section data-view="contact" class="wrap page" hidden aria-label="İletişim"><a class="back" href="#home" data-page="home">← Ana sayfa</a><p class="kicker">İletişim</p><h2>Bana ulaşın.</h2><div class="contact-grid"><div class="contact-details"><h3>E-posta</h3><p><a class="mail" href="mailto:omer@omeryavuz.net">omer@omeryavuz.net</a></p><p class="reply-note">İlettiğiniz tüm mesajlara, belirttiğiniz e-posta adresi üzerinden geri dönüş yapılacaktır.</p></div><form id="oy-message-form" action="https://formsubmit.co/omer@omeryavuz.net" method="POST"><input type="hidden" name="_subject" value="omeryavuz.net | Yeni iletişim mesajı"><input type="hidden" name="_captcha" value="true"><input type="hidden" name="_template" value="table"><input type="hidden" name="_next" value="https://omeryavuz.net/thanks.html"><input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" aria-hidden="true"><div class="form-row"><label for="oy-name">Adınız soyadınız<input id="oy-name" name="name" autocomplete="name" required maxlength="120"></label><label for="oy-email">E-posta adresiniz<input id="oy-email" name="email" type="email" autocomplete="email" required maxlength="254"></label></div><label for="oy-topic">Konu<select id="oy-topic" name="topic"><option>Genel soru</option><option>Randevu ve başvuru</option><option>Akademik iletişim</option></select></label><label for="oy-message">Mesajınız<textarea id="oy-message" name="message" required maxlength="3000"></textarea></label><button class="send" type="submit">Mesajı gönder ↗</button><p class="form-note">Gönder düğmesinden sonra güvenlik doğrulamasını tamamlayınız.</p><p class="form-status" id="oy-form-status" role="status" aria-live="polite"></p></form></div></section>
 
-    <section id="home" class="hero">
-        <div class="container hero-container">
-            <div class="hero-text">
-                <h1>Op. Dr. Ömer Yavuz</h1>
-                <p>Göğüs Cerrahı</p>
-                <a href="#contact" class="btn">Randevu / İletişim</a>
-            </div>
-            <div class="hero-visuals">
-                <div class="visual-group">
-                    <img src="assets/gata_logo.jpg" alt="GATA" class="hero-img gata-logo">
-                    <img src="assets/thorax_art.jpg" alt="Göğüs Cerrahisi" class="hero-img thorax-art">
-                </div>
-            </div>
-        </div>
-        <div class="hero-bg-icons">
-            <img src="assets/hero_profile.jpg" alt="Op. Dr. Ömer Yavuz Profil" class="bg-icon hero-bg-profile">
-            <img src="assets/scalpel_bg.png" alt="Bistüri İkonu" class="bg-icon scalpel-bg">
-            <img src="assets/stethoscope_bg.png" alt="Stetoskop İkonu" class="bg-icon stethoscope-bg">
-        </div>
-    </section>
 
-    <section id="about" class="section">
-        <div class="container">
-            <h2>Hakkımda</h2>
-            <p style="text-align: center;">Ankara Gülhane Askeri Tıp Fakültesi'nden mezun oldum. Uzmanlık eğitimimi
-                İstanbul Gülhane Askeri Tıp Akademisi Haydarpaşa Göğüs Cerrahisi Anabilim Dalı'nda tamamladım. Detaylı
-                bilgi için en alttaki bağlantıları takip edebilirsiniz.</p>
-        </div>
-    </section>
-
-    <section id="interests" class="section bg-light">
-        <div class="container">
-            <h2>İlgi Alanları</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Akciğer Kanseri Cerrahisi</h3>
-                    <p>Akciğer kanserinin tanısı, cerrahi tedavisi ve idamesi.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Minimal İnvaziv Cerrahi</h3>
-                    <p>VATS (Video Yardımlı Torakoskopik Cerrahi) ve RATS (Robot Yardımlı Torakoskopik Cerrahi) ile daha
-                        az ağrılı ve hızlı iyileşme sağlayan operasyonlar.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Göğüs Duvarı Ameliyatları</h3>
-                    <p>Göğüs kafesi şekil bozuklukları (pektus ekskavatum ve karinatum) ve göğüs duvarı tümörlerinin
-                        ameliyatla düzeltilmesi.</p>
-                </div>
-                <div class="project-card">
-                    <h3>Mediasten Hastalıkları</h3>
-                    <p>Mediasten bölgesindeki kist ve tümörlerin tanı ve tedavisi.</p>
-                </div>
-                <a href="port-catheter.html" class="project-card"
-                    style="text-decoration: none; color: inherit; cursor: pointer;">
-                    <h3>Port Kateter</h3>
-                    <p>Kemoterapi ve uzun süreli tedavilerde kullanılan port kateter takılması işlemi hakkında detaylı
-                        bilgi.</p>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>İletişim</h2>
-            <p style="text-align: center; margin-bottom: 20px;">Randevu ve bilgi almak için aşağıdaki kanallardan
-                ulaşabilirsiniz.</p>
-
-            <div class="contact-info">
-                <p><strong>Telefon:</strong> 0212 909 60 00 (Dahili: 21866 - 21867)</p>
-                <p><strong>E-posta:</strong> <a href="mailto:omer@omeryavuz.net">omer@omeryavuz.net</a> | <a
-                        href="mailto:omeryavuz@dr.com">omeryavuz@dr.com</a></p>
-            </div>
-
-            <div class="social-links">
-                <a href="https://www.linkedin.com/in/omeryavuz3853/" target="_blank" class="social-icon"><i
-                        class="fab fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/omeryavuz3853/" target="_blank" class="social-icon"><i
-                        class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/@camsakurathoracic" target="_blank" class="social-icon"><i
-                        class="fab fa-youtube"></i></a>
-                <a href="https://scholar.google.com/citations?user=BQMvCpAAAAAJ&hl=tr" target="_blank"
-                    class="social-icon"><i class="fas fa-graduation-cap"></i></a>
-            </div>
-
-            <div class="contact-action">
-                <a href="contact.html" class="btn">Bana Yazın</a>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Op. Dr. Ömer Yavuz. Tüm hakları saklıdır.</p>
-        </div>
-    </footer>
-
-</body>
-
+</main>
+<footer class="wrap footer"><span>© 2026 Ömer Yavuz · Göğüs Cerrahisi</span><div class="footer-links"><span class="inactive" aria-disabled="true" title="Yakında etkinleştirilecek">Scholar</span><a href="https://www.linkedin.com/in/omeryavuz3853/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.instagram.com/omeryavuz3853/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.youtube.com/@camsakurathoracic" target="_blank" rel="noopener noreferrer">YouTube</a></div></footer>
+</div>
 <script>
-    // Scroll Efekti: Sayfa aşağı kayınca logo belirsin
-    window.addEventListener('scroll', function () {
-        const logo = document.querySelector('.logo');
-        if (window.scrollY > 50) {
-            logo.classList.add('visible');
-        } else {
-            logo.classList.remove('visible');
-        }
-    });
+(()=>{
+const root=document.getElementById('oyv2');
+const views=Array.from(root.querySelectorAll('[data-view]'));
+const links=Array.from(root.querySelectorAll('[data-page]'));
+function show(name){
+if(!views.some(v=>v.dataset.view===name))name='home';
+views.forEach(v=>v.hidden=v.dataset.view!==name);
+const active=['lung','minimal','mediastinum','chestwall','port'].includes(name)?'clinical':name;
+links.forEach(a=>{if(a.dataset.page===active)a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+}
+links.forEach(a=>a.addEventListener('click',e=>{e.preventDefault();show(a.dataset.page);}));
+show('home');
+})();
 </script>
-</body>
 
-</html>
+</body></html>
