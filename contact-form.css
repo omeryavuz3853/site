@@ -1,0 +1,20 @@
+#oyv2 .contact-form-column{min-width:0}
+#oyv2 #contact-form{min-width:0;padding:0;border:0;background:transparent}
+#oyv2 #contact-form label,#oyv2 .verification-label{display:block;font-size:14px;color:#34424d;font-weight:500}
+#oyv2 #contact-form input,#oyv2 #contact-form textarea{display:block;width:100%;margin:8px 0 23px;background:#f6f7f8;border:1px solid #d0d8de;border-radius:4px;padding:13px 14px;color:#111c25;outline:none}
+#oyv2 #contact-form textarea{resize:vertical;min-height:155px}
+#oyv2 #contact-form input:focus,#oyv2 #contact-form textarea:focus{border-color:#53616c;box-shadow:0 0 0 3px #111c2510}
+#oyv2 .verification{margin:0 0 24px}
+#oyv2 .verification-label{margin:0 0 10px}
+#oyv2 #contact-captcha{min-height:78px}
+#oyv2 #contact-submit,#oyv2 .success-home{display:inline-flex;align-items:center;justify-content:center;gap:45px;background:#111c25;color:#fff;border:0;border-radius:4px;padding:14px 23px}
+#oyv2 #contact-submit:disabled{opacity:.5;cursor:not-allowed}
+#oyv2 #contact-status{margin:16px 0 0;font-size:14px;white-space:pre-line}
+#oyv2 #contact-status[data-error=true]{color:#963b46}
+#oyv2 .contact-success{padding:38px 0;max-width:550px}
+#oyv2 .success-mark{display:flex;align-items:center;justify-content:center;width:56px;height:56px;border:1px solid #aab6bf;border-radius:50%;font-size:26px;color:#111c25;margin-bottom:25px}
+#oyv2 .contact-success h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:44px;line-height:1.15;font-weight:400;margin:0 0 16px}
+#oyv2 .contact-success p{color:#53616c;margin:0;max-width:390px}
+#oyv2 .success-actions{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-top:32px;font-size:14px}
+#oyv2 #new-message{background:transparent;color:#111c25;border:1px solid #adb7bf;border-radius:4px;padding:13px 22px}
+@media(max-width:620px){#oyv2 .contact-success{padding:20px 0}#oyv2 .contact-success h3{font-size:38px}}
