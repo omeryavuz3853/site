@@ -1,0 +1,17 @@
+{
+  "name": "omer-yavuz-contact-service",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "nodemailer": "^10.0.16",
+    "svg-captcha": "^1.4.0",
+    "validator": "^13.15.35"
+  }
+}
