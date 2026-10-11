@@ -1,2 +1,4 @@
-// Public form identifier, intended for browser-side use. This is not a mailbox password.
-window.CONTACT_FORM_KEY = '5b539931-6b08-47aa-bf1c-06c077388dab';
+// Public values only. The secret key belongs in Formspree settings, never in this file.
+// Complete account setup described in TURNSTILE-SETUP.md before deploying.
+window.CONTACT_FORM_ENDPOINT = '';
+window.CONTACT_TURNSTILE_SITEKEY = '';
