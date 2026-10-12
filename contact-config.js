@@ -1,2 +1,3 @@
-// Public form identifier, intended for browser-side use. This is not a mailbox password.
-window.CONTACT_FORM_KEY = '5b539931-6b08-47aa-bf1c-06c077388dab';
+// Public integration values. The secret key is stored only in Formspree settings.
+window.CONTACT_FORM_ENDPOINT = 'https://formspree.io/f/xeaezwqq';
+window.CONTACT_TURNSTILE_SITEKEY = '0x4AAAAAAFTtORqgSEhZuhcU';

@@ -13,12 +13,12 @@
   function resetCaptcha() {
     token = '';
     submit.disabled = true;
-    if (widget !== undefined && window.hcaptcha) window.hcaptcha.reset(widget);
+    if (widget !== undefined && window.turnstile) window.turnstile.reset(widget);
   }
   window.oyContactCaptchaReady = () => {
-    widget = window.hcaptcha.render('contact-captcha', {
-      sitekey: '50b2fe65-b00b-4b9e-ad62-3ba471098be2',
-      theme: 'light', size: window.innerWidth < 370 ? 'compact' : 'normal',
+    widget = window.turnstile.render('#contact-captcha', {
+      sitekey: window.CONTACT_TURNSTILE_SITEKEY,
+      theme: 'light', size: 'flexible', language: 'tr', appearance: 'always',
       callback: value => { token = value; submit.disabled = busy; captchaNote.textContent = ''; },
       'expired-callback': () => { token = ''; submit.disabled = true; captchaNote.textContent = 'Doğrulamanın süresi doldu. Lütfen yeniden doğrulayın.'; },
       'error-callback': () => { token = ''; submit.disabled = true; captchaNote.textContent = 'Doğrulama yüklenemedi. Sayfayı yenileyebilir veya e-posta ile ulaşabilirsiniz.'; }
@@ -28,8 +28,12 @@
   function loadCaptcha() {
     if (location.hash !== '#contact' || started) return;
     started = true;
+    if (!window.CONTACT_TURNSTILE_SITEKEY || !/^https:\/\/formspree\.io\/f\/[a-zA-Z0-9]+$/.test(window.CONTACT_FORM_ENDPOINT || '')) {
+      captchaNote.textContent = 'Form şu anda kullanılamıyor. Lütfen e-posta ile ulaşın.';
+      return;
+    }
     const script = document.createElement('script');
-    script.src = 'https://js.hcaptcha.com/1/api.js?onload=oyContactCaptchaReady&render=explicit&hl=tr&recaptchacompat=off';
+    script.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js?onload=oyContactCaptchaReady&render=explicit';
     script.async = true;
     script.defer = true;
     script.onerror = () => { captchaNote.textContent = 'Doğrulama yüklenemedi. Sayfayı yenileyebilir veya e-posta ile ulaşabilirsiniz.'; };
@@ -46,20 +50,17 @@
       input.setCustomValidity(input.value ? '' : 'Lütfen bu alanı doldurun.');
     }
     if (!form.reportValidity()) return;
-    if (!token || !window.hcaptcha?.getResponse(widget)) {
+    if (!token || !window.turnstile?.getResponse(widget)) {
       say('Lütfen güvenlik doğrulamasını tamamlayın.', true);
       return;
     }
     const payload = {
-      access_key: window.CONTACT_FORM_KEY,
       subject: 'İletişim Formundan Mesajınız Var',
-      from_name: 'Ömer Yavuz İletişim Formu',
-      replyto: form.elements.namedItem('email').value,
+      email: form.elements.namedItem('email').value,
       'Gönderen': form.elements.namedItem('name').value,
       'Mail adresi': form.elements.namedItem('email').value,
       'Mesajı': form.elements.namedItem('message').value,
-      'h-captcha-response': token,
-      botcheck: ''
+      'cf-turnstile-response': token
     };
     busy = true;
     submit.disabled = true;
@@ -67,12 +68,12 @@
     for (const input of form.querySelectorAll('input, textarea')) input.readOnly = true;
     say('Mesajınız gönderiliyor…');
     try {
-      const response = await fetch('https://api.web3forms.com/submit', {
+      const response = await fetch(window.CONTACT_FORM_ENDPOINT, {
         method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify(payload), signal: AbortSignal.timeout(25000)
       });
       const result = await response.json();
-      if (!response.ok || result.success !== true) {
+      if (!response.ok || result.ok === false || result.errors?.length) {
         say(response.status === 429 ? 'Gönderim sınırına ulaşıldı. Lütfen daha sonra deneyin veya e-posta ile ulaşın.' : 'Mesajınız gönderilemedi. Lütfen doğrulamayı tekrar tamamlayıp yeniden deneyin veya e-posta ile ulaşın.', true);
         return;
       }
