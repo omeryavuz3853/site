@@ -102,11 +102,17 @@ mask-image:radial-gradient(ellipse closest-side at 50% 50%,#000 24%,rgba(0,0,0,.
 
 
 </main>
-<footer class="wrap footer"><span>© 2026 Ömer Yavuz · Göğüs Cerrahisi</span><div class="footer-links"><div class="footer-link-row" aria-label="Akademik bağlantılar"><a href="https://scholar.google.com/citations?user=BQMvCpAAAAAJ&amp;hl=tr" target="_blank" rel="noopener noreferrer">Scholar</a><a href="https://orcid.org/0000-0002-7366-2772" target="_blank" rel="noopener noreferrer">ORCID</a><a href="https://www.scopus.com/authid/detail.uri?authorId=56712503200" target="_blank" rel="noopener noreferrer">Scopus</a><a href="https://www.webofscience.com/wos/author/record/AAZ-5820-2020" target="_blank" rel="noopener noreferrer">WoS</a></div><div class="footer-link-row" aria-label="Sosyal medya"><a href="https://www.linkedin.com/in/omeryavuz3853/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.instagram.com/omeryavuz3853/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.youtube.com/@camsakurathoracic" target="_blank" rel="noopener noreferrer">YouTube</a></div></div></footer>
+<footer class="wrap footer"><span>© <span id="copyright-year">2026</span> Ömer Yavuz · Göğüs Cerrahisi</span><div class="footer-links"><div class="footer-link-row" aria-label="Akademik bağlantılar"><a href="https://scholar.google.com/citations?user=BQMvCpAAAAAJ&amp;hl=tr" target="_blank" rel="noopener noreferrer">Scholar</a><a href="https://orcid.org/0000-0002-7366-2772" target="_blank" rel="noopener noreferrer">ORCID</a><a href="https://www.scopus.com/authid/detail.uri?authorId=56712503200" target="_blank" rel="noopener noreferrer">Scopus</a><a href="https://www.webofscience.com/wos/author/record/AAZ-5820-2020" target="_blank" rel="noopener noreferrer">WoS</a></div><div class="footer-link-row" aria-label="Sosyal medya"><a href="https://www.linkedin.com/in/omeryavuz3853/" target="_blank" rel="noopener noreferrer">LinkedIn</a><a href="https://www.instagram.com/omeryavuz3853/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.youtube.com/@camsakurathoracic" target="_blank" rel="noopener noreferrer">YouTube</a></div></div></footer>
 </div>
 <script>
 (()=>{
 const root=document.getElementById('oyv2');
+const copyrightYear=document.getElementById('copyright-year');
+function updateCopyrightYear(){copyrightYear.textContent=new Intl.DateTimeFormat('en',{year:'numeric',timeZone:'Europe/Istanbul'}).format(new Date());}
+updateCopyrightYear();
+window.addEventListener('pageshow',updateCopyrightYear);
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)updateCopyrightYear();});
+setInterval(updateCopyrightYear,60000);
 const views=Array.from(root.querySelectorAll('[data-view]'));
 const links=Array.from(root.querySelectorAll('[data-page]'));
 function show(name){
