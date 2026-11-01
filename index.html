@@ -32,6 +32,13 @@ mask-image:radial-gradient(ellipse closest-side at 50% 50%,#000 24%,rgba(0,0,0,.
 #oyv2 .footer-license .license-badge:hover{opacity:1}
 #oyv2 .footer-license img{display:block;width:88px;height:31px}
 @media(max-width:620px){#oyv2 .footer .footer-license{flex-direction:column;gap:10px}#oyv2 .footer-license .license-badge{flex-basis:auto}}
+</style><style id="education-emblems">
+#oyv2 .education .education-copy{width:100%;grid-template-columns:1fr 1.5fr}
+#oyv2 .education .education-item{display:flex;align-items:center;gap:24px;min-width:0}
+#oyv2 .education .education-item>div{min-width:0}
+#oyv2 .education .academy-seal{height:95px;object-fit:cover;border-radius:0}
+@media(max-width:850px){#oyv2 .education .education-item{gap:16px}}
+@media(max-width:620px){#oyv2 .education .education-copy{grid-template-columns:1fr;gap:20px}#oyv2 .education .education-item{gap:17px}#oyv2 .education .academy-seal{height:70px}}
 </style></head><body>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600&family=Cormorant+Garamond:wght@400;500&display=swap');
@@ -52,7 +59,10 @@ mask-image:radial-gradient(ellipse closest-side at 50% 50%,#000 24%,rgba(0,0,0,.
 <main id="oy-content">
 <section data-view="home" aria-label="Ana sayfa">
 <div class="stage"><div class="portrait"><img src="assets/portrait.jpg" alt="Ömer Yavuz portresi" width="1568" height="1592"></div><div class="wrap hero"><div class="hero-copy"><p class="eyebrow">Göğüs cerrahisi · İstanbul</p><p class="title-small">Op. Dr.</p><h1><span>Ömer</span><span>Yavuz</span></h1><p class="specialty">Göğüs Cerrahisi Uzmanı</p><a class="textlink" href="#about" data-page="about">Beni tanıyın <span aria-hidden="true">↗</span></a></div></div></div>
-<div class="wrap education"><img class="seal" src="assets/gata_logo.jpg" alt="Gülhane Askeri Tıp Fakültesi amblemi" width="85" height="85"><div class="education-copy"><div><p>Fakülte</p><strong>Gülhane Askeri Tıp Fakültesi / Ankara</strong></div><div><p>Uzmanlık</p><strong>Gülhane Askeri Tıp Akademisi Haydarpaşa Eğitim ve Araştırma Hastanesi / İstanbul</strong></div></div></div>
+<div class="wrap education"><div class="education-copy">
+<div class="education-item"><img class="seal" src="assets/gata_logo.jpg" alt="Gülhane Askeri Tıp Fakültesi amblemi" width="85" height="85"><div><p>Fakülte</p><strong>Gülhane Askeri Tıp Fakültesi / Ankara</strong></div></div>
+<div class="education-item"><img class="seal academy-seal" src="assets/gata-academy.webp" alt="Gülhane Askeri Tıp Akademisi amblemi" width="85" height="95"><div><p>Uzmanlık</p><strong>Gülhane Askeri Tıp Akademisi Haydarpaşa Eğitim ve Araştırma Hastanesi / İstanbul</strong></div></div>
+</div></div>
 <div class="wrap gateways"><a class="gateway" href="#clinical" data-page="clinical"><small>KLİNİK</small><h2>Çalışma alanlarım <span aria-hidden="true">↗</span></h2><p>Göğüs cerrahisindeki ilgi alanlarım.</p></a><a class="gateway" href="#academic" data-page="academic"><small>AKADEMİK</small><h2>Akademik çalışmalar <span aria-hidden="true">↗</span></h2><p>Yayınlar ve akademik profiller.</p></a><a class="gateway" href="#contact" data-page="contact"><small>İLETİŞİM</small><h2>Bana ulaşın <span aria-hidden="true">↗</span></h2><p>E-posta ve iletişim formu.</p></a></div>
 </section>
 <section data-view="about" class="about-screen" hidden aria-label="Hakkımda">
